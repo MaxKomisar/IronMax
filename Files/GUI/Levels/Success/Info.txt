@@ -1,0 +1,6 @@
+L1N - Level 1 Normal
+L1P - Level 1 Presses | Click
+LB1N - Level Boss 1 normal
+LB1P - Level Boss 1 Presses | Click
+Width: 300 pix
+Height: 200 pix
