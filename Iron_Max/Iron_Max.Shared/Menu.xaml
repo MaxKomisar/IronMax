@@ -1,0 +1,167 @@
+﻿<Page
+    x:Class="Iron_Max.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Iron_Max"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="IMax_Textures/Menu_MM.png"/>
+        </Grid.Background>
+
+        <StackPanel HorizontalAlignment="Right"  VerticalAlignment="Center" >
+            <Button x:Name="StartGameIMax" Height="100" Margin="0,0,50,0" Width="300" Click="StartGameIMax_Click" >
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Grid.Resources>
+                                <BitmapImage x:Key="NormalButton" UriSource="IMax_Textures/Menu/SG_N.png"></BitmapImage>
+                                <BitmapImage x:Key="OnMouseOver" UriSource="IMax_Textures/Menu/SG_P.png"></BitmapImage>
+                                <BitmapImage x:Key="OnPresed" UriSource="IMax_Textures/Menu/SG_P.png"></BitmapImage>
+                                <BitmapImage x:Key="Disabled" UriSource="IMax_Textures/Levels/LDis.png"></BitmapImage>
+                            </Grid.Resources>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="ImageSource" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource OnMouseOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="ImageSource" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource OnPresed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="ImageSource" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Disabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid>
+                                <Grid.Background>
+                                    <ImageBrush x:Name="Border" ImageSource="{StaticResource NormalButton}"></ImageBrush>
+                                </Grid.Background>
+                                <ContentPresenter x:Name="ContentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Grid>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="SettingIMax" Height="100" Margin="0,20,50,0" Width="300" Click="SettingIMax_Click" >
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Grid.Resources>
+                                <BitmapImage x:Key="NormalButton" UriSource="IMax_Textures/Menu/O_N.png"></BitmapImage>
+                                <BitmapImage x:Key="OnMouseOver" UriSource="IMax_Textures/Menu/O_P.png"></BitmapImage>
+                                <BitmapImage x:Key="OnPresed" UriSource="IMax_Textures/Menu/O_P.png"></BitmapImage>
+                                <BitmapImage x:Key="Disabled" UriSource="IMax_Textures/Levels/LDis.png"></BitmapImage>
+                            </Grid.Resources>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="ImageSource" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource OnMouseOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="ImageSource" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource OnPresed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="ImageSource" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Disabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid>
+                                <Grid.Background>
+                                    <ImageBrush x:Name="Border" ImageSource="{StaticResource NormalButton}"></ImageBrush>
+                                </Grid.Background>
+                                <ContentPresenter x:Name="ContentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Grid>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button x:Name="AuthorGameIMax" Height="100" Margin="0,20,50,0" Width="300" Click="AuthorGameIMax_Click" >
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Grid.Resources>
+                                <BitmapImage x:Key="NormalButton" UriSource="IMax_Textures/Menu/A_N.png"></BitmapImage>
+                                <BitmapImage x:Key="OnMouseOver" UriSource="IMax_Textures/Menu/A_P.png"></BitmapImage>
+                                <BitmapImage x:Key="OnPresed" UriSource="IMax_Textures/Menu/A_P.png"></BitmapImage>
+                                <BitmapImage x:Key="Disabled" UriSource="IMax_Textures/Levels/LDis.png"></BitmapImage>
+                            </Grid.Resources>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="ImageSource" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource OnMouseOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="ImageSource" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource OnPresed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="ImageSource" Storyboard.TargetName="Border">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource Disabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid>
+                                <Grid.Background>
+                                    <ImageBrush x:Name="Border" ImageSource="{StaticResource NormalButton}"></ImageBrush>
+                                </Grid.Background>
+                                <ContentPresenter x:Name="ContentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Grid>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+
+        </StackPanel>
+        <MediaElement 
+           x:Name="MenuMusic" HorizontalAlignment="Left" Height="100" Margin="655,254,0,0" VerticalAlignment="Top" Width="100" Visibility="Collapsed" Source="Music/Trap5.mp3" IsLooping="True"/>
+        <Image x:Name="Menu_Logo" Margin="100,50,0,0" HorizontalAlignment="Left" Height="250" VerticalAlignment="Top" Width="750" Source="IMax_Textures/Logo_IrOn_Max.png" Stretch="Fill"/>
+
+    </Grid>
+</Page>

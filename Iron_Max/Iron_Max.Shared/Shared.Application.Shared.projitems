@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>10aa7549-b47d-49d8-a34c-b27221d4363f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Iron_Max</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Author.xaml.cs">
+      <DependentUpon>Author.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Circle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controll\Accelerometer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controll\TouchCollectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controll\VirtualGamePad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effectes\AnimationE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effectes\AnimationExplosionAnim.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effectes\Explosion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effectes\Gun_particle\GParticle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effectes\Gun_particle\GParticleSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effectes\Particle\Particle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effectes\Particle\ParticleSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enemy\AnimationE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enemy\AnimationEnemyE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enemy\Enemy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enemy\RedRobot\AnimationRR.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enemy\RedRobot\AnimRedRobot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enemy\RedRobot\EnemyRR.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enemy\Tank\AnimationTank.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enemy\Tank\AnimationEnemyTank.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enemy\Tank\EnemyTank.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bullets_Enemy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameSystemIMax.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Gem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Layers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Level.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Player\Animation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Player\AnimationPlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Player\Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RectangleExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Setting.xaml.cs">
+      <DependentUpon>Setting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Tile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Author.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)GamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Setting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Styles\StandartStyleIMax.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Author.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Game_Over.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Help_Rules.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L10N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L10P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L11N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L11P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L12N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L12P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L13N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L13P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L14N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L14P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L15N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L15P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L16N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L16P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L17N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L17P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L18N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L18P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L19N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L19P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L1N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L1P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L20N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L20P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L2N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L2P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L3N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L3P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L4N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L4P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L5N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L5P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L6N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L6P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L7N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L7P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L8N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L8P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L9N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\L9P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\LB1N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\LB1P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\LB2N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\LB2P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Levels\LDis.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Logo_IrOn_Max.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Menu\A_N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Menu\A_P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Menu\O_N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Menu\O_P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Menu\SG_N.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Menu\SG_P.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Menu_MM.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Menu_pause_Levels.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Pause.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Pause_Game_Text.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Restart_Game.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IMax_Textures\Resume.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Music\Dubstep.mp3" />
+    <Content Include="$(MSBuildThisFileDirectory)Music\Trap5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Enemy\Jeep\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Enemy\Copter\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Enemy\robot\" />
+  </ItemGroup>
+</Project>
