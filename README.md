@@ -1,2 +1,2 @@
 # IronMax
-Simple 2d platformer written on # Monogame
+Simple 2d platformer written on Monogame
